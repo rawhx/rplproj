@@ -236,6 +236,6 @@ function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("logo").style.maxHeight = "60px";
   } else {
-    document.getElementById("logo").style.maxHeight = "100px";
+    document.getElementById("logo").style.maxHeight = "80px";
   }
 } 
