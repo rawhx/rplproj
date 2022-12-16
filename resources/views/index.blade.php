@@ -79,14 +79,26 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-8">
-          <h1>KnightOne - Create Bootstrap Website Template</h1>
-          <h2>We are team of designers making websites with Bootstrap</h2>
-          <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
+    <div class="opa">
+        <div id="carouselExampleInterval" class="carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1500">
+                <div class="img" style="background-image: url(https://i0.wp.com/smkn4malang.sch.id/wp-content/uploads/2021/09/IMG20210503112245-scaled-e1632381195678.jpg?fit=2560%2C1075&ssl=1)"></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <div class="img" style="background-image: url(http://placekitten.com/1170/500)"></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <div class="img" style="background-image: url(https://smkn4malang.sch.id/wp-content/uploads/2020/03/2019_02_11_Sejarah-SMK-Negeri-4-Malang-yang-Lahir-dari-Tangan-Keuskupan-Malang.jpg);"></div>
+            </div>
+            </div>
+            <div class="hai">
+                <div class="po">
+                    <h1>Selamat Datang Di Website</h1>
+                    <p>RPL Area SMKN 4 Malang</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
   </section><!-- End Hero -->
 
