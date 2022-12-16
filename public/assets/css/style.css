@@ -1285,7 +1285,7 @@ section {
 }
 
 .faq .accordion-list {
-  padding: 0 100px 60px 100px;
+  padding: 40px 100px 60px 100px;
 }
 
 .faq .accordion-list ul {
@@ -1314,6 +1314,7 @@ section {
   padding-right: 30px;
   outline: none;
   cursor: pointer;
+  color: darkblue;
 }
 
 .faq .accordion-list i {
@@ -1337,7 +1338,7 @@ section {
 }
 
 .faq .accordion-list a.collapsed:hover {
-  color: #009961;
+  color: #0082ca;
 }
 
 .faq .accordion-list a.collapsed .icon-show {
