@@ -92,7 +92,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #009961;
+  border: 6px solid darkblue;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -132,7 +132,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #009961;
+  background: #009dff;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -166,7 +166,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background-color: #009EFF;
+  background-color: #009dff;
 }
 
 #header .logo {
@@ -653,7 +653,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #009961;
+  background: #009EFF;
   bottom: 0;
   left: 0;
 }
@@ -737,7 +737,7 @@ section {
 .services .icon-box .icon {
   width: 64px;
   height: 64px;
-  background: #009961;
+  background: #009EFF;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -770,11 +770,11 @@ section {
 
 .services .icon-box:hover {
   transform: translateY(-10px);
-  border-color: #009961;
+  border-color: darkblue;
 }
 
 .services .icon-box:hover h4 a {
-  color: #009961;
+  color: darkblue;
 }
 
 /*--------------------------------------------------------------
