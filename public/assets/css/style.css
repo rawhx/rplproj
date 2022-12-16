@@ -667,6 +667,30 @@ section {
   font-size: 15px;
 }
 
+.section-title-client {
+  padding-bottom: 30px;
+}
+
+.section-title-client h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.section-title-client h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #009EFF;
+  bottom: 0;
+  left: 0;
+}
+
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
