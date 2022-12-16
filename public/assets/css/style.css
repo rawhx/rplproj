@@ -667,6 +667,30 @@ section {
   font-size: 15px;
 }
 
+.section-title-client {
+  padding-bottom: 30px;
+}
+
+.section-title-client h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.section-title-client h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #009EFF;
+  bottom: 0;
+  left: 0;
+}
+
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
@@ -712,15 +736,15 @@ section {
   border-radius: 50px;
   transition: 0.3s;
   line-height: 1;
-  color: #009961;
+  color: #009EFF;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   margin-top: 6px;
-  border: 2px solid #009961;
+  border: 2px solid #009EFF;
 }
 
 .about .content .btn-learn-more:hover {
-  background: #009961;
+  background: #009EFF;
   color: #fff;
   text-decoration: none;
 }
