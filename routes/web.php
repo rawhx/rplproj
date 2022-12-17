@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PesanController;
+use App\Http\Controllers\ViewPageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+// pesan 
+Route::post('/', [PesanController::class, 'create_pesan'])->name('send_massage');
+
+Route::group(['middleware' => 'guest'], function(){
+    Route::get('/', [ViewPageController::class, 'index'])->name('index');
 });

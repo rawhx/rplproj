@@ -394,7 +394,8 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="{{route('send_massage')}}" method="post" role="form" class="php-email-form">
+              @csrf
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Masukan Nama" required>
@@ -404,15 +405,15 @@
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subjek" required>
+                <input type="text" class="form-control" name="subjek" id="subject" placeholder="Subjek" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Pesan" required></textarea>
+                <textarea class="form-control" name="pesan" rows="5" placeholder="Pesan" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Pesan anda berhasil terkirim. Terima kasih!</div>
               </div>
               <div class="text-center"><button type="submit">Kirim Pesan</button></div>
             </form>
