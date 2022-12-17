@@ -133,6 +133,15 @@
   display: none;
 }
 
+table {
+  margin-top: 50px;
+}
+
+table .judul td{
+  font-weight: bold;
+  background-color: cornflowerblue
+}
+
 /* mobile */
 @media screen and (max-width: 768px) {
   .close {

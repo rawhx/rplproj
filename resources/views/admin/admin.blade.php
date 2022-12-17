@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Admin RPL SMKN 4 Malang</title>
 
+    <link href="assets/img/backgorund-logo.jpeg" rel="icon">
     <link rel="stylesheet" href="assets/css/admin_style.css">
 
     {{-- icon --}}
@@ -23,7 +24,7 @@
         </div>
         <header>
             <a href="">
-                <img src="https://i0.wp.com/smkn4malang.sch.id/wp-content/uploads/2020/02/logo-grafika.png?w=322&ssl=1" alt="smkn4" width="50">
+                <img src="assets/img/logo.png" alt="smkn4" width="100">
             </a>
         </header>
         <ul class="nav">
@@ -53,7 +54,7 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="{{ route('logout') }}">
                     <i class="bi bi-box-arrow-left" style="color: red"></i>Keluar
                 </a>
             </li>
@@ -66,20 +67,19 @@
                 <span class="iconify" data-icon="ri:menu-2-fill" data-width="30"></span>
             </div>
             <a class="profile">
-                <h6>Hi, </h6>
-                <div class="img" style="background-image: url(https://www.kaorinusantara.or.id/wp-content/uploads/2019/03/film-anime-konosuba-crimson-legend-F1.jpg)"></div>
+                <h6 style="margin: 0 50px">Hi, Admin</h6>
             </a>
         </div>
         <div class="dashboard">
             <h2>Dashboard</h2>
             <div class="content">
-               <table class="table table-striped" style="text-align: center">
-                    <tr>
-                        <td>No</td>
-                        <td>Nama</td>
-                        <td>Email</td>
-                        <td>Subjek</td>
-                        <td>Pesan</td>
+                <table class="table" style="text-align: center;">
+                    <tr class="judul bg-info">
+                        <td class="text-light">No</td>
+                        <td class="text-light">Nama</td>
+                        <td class="text-light">Email</td>
+                        <td class="text-light">Subjek</td>
+                        <td class="text-light">Pesan</td>
                     </tr>
 
                     @foreach ($pesan as $pesan)

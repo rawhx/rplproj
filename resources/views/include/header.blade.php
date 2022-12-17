@@ -19,6 +19,9 @@
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
+          @auth
+              <a href="/admin" style="padding: 5px 25px; border-radius: 20px; border: none; background-color: #004fc6; color: white; font-weight: bold">Admin</a>
+          @endauth
         </div>
       </div>
 
