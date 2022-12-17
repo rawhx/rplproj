@@ -9,7 +9,11 @@ class PesanController extends Controller
 {
     public function view()
     {
-        
+        $pesan = Pesan::all();
+
+        return view('admin/admin', [
+            'pesan' => $pesan,
+        ]); 
     }
 
     public function create_pesan(Request $request)

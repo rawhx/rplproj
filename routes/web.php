@@ -21,3 +21,5 @@ Route::post('/', [PesanController::class, 'create_pesan'])->name('send_massage')
 Route::group(['middleware' => 'guest'], function(){
     Route::get('/', [ViewPageController::class, 'index'])->name('index');
 });
+
+Route::get('/admin', [PesanController::class, 'view'])->name('pesan');
