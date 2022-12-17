@@ -18,7 +18,7 @@ class Pesan extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('subjek');
-            $table->string('pesan');
+            $table->text('pesan');
             $table->rememberToken();
             $table->timestamps();
         });
