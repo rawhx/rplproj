@@ -116,7 +116,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-              <div class="icon-box">
+              <div class="icon-box p">
                 <div class="icon"><i class="bi bi-phone"></i></div>
                 <h4><a href="">Mobile Development</a></h4>
                 <p>Siswa diajarkan untuk membuat aplikasi yang kreatif dan inovatif</p>
@@ -195,7 +195,7 @@
 
           <div class="section-title">
             <h2>Portofolio</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p>Hasil portofolio atau karya siswa-siswi SMK Negeri 4 Malang.</p>
           </div>
 
           <div class="row">
@@ -203,7 +203,7 @@
               <ul id="portfolio-flters">
                 <li data-filter="*" class="filter-active">All</li>
                 <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Card</li>
+                <li data-filter=".filter-card">Games</li>
                 <li data-filter=".filter-web">Web</li>
               </ul>
             </div>
@@ -222,11 +222,11 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/gadang.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
+                <h4>SDN Gadang 1</h4>
                 <p>Web</p>
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/gadang.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -252,11 +252,11 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/bareng-1.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 2</h4>
+                <h4>SDN Bareng 1</h4>
                 <p>Web</p>
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/bareng-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Bareng 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -272,11 +272,11 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/games-1.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+                <h4>daddys-adventure:goes to school</h4>
+                <p>Karya Kelompok Kelas RPL</p>
+                <a href="assets/img/portfolio/games-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -292,11 +292,41 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/kiduldalem.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
+                <h4>SDN Kiduldalem 2</h4>
                 <p>Web</p>
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/kiduldalem.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <img src="assets/img/portfolio/sdnbareng3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SDN Bareng 3</h4>
+                <p>Web</p>
+                <a href="assets/img/portfolio/sdnbareng3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <img src="assets/img/portfolio/sukoharjo.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SDN Sukoharjo 1</h4>
+                <p>Web</p>
+                <a href="assets/img/portfolio/sukoharjo.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <img src="assets/img/portfolio/sukoharjo.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SDN sukoharjo 1</h4>
+                <p>Web</p>
+                <a href="assets/img/portfolio/sukoharjo.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -367,7 +397,7 @@
             <div class="section-title">
               <h2>Kontak <button type="submit">Simpan</button></h2>
               <p><textarea name="deskripsi" id="" cols="135" rows="5" required>
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                Dapat menghubungi kami pada lokasi berikut.
               </textarea></p>
             </div>
           </div>
@@ -514,7 +544,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-              <div class="icon-box">
+              <div class="icon-box p">
                 <div class="icon"><i class="bi bi-phone"></i></div>
                 <h4><a href="">Mobile Development</a></h4>
                 <p>Siswa diajarkan untuk membuat aplikasi yang kreatif dan inovatif</p>
@@ -593,7 +623,7 @@
 
           <div class="section-title">
             <h2>Portofolio</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p>Hasil portofolio atau karya siswa-siswi SMK Negeri 4 Malang.</p>
           </div>
 
           <div class="row">
@@ -601,7 +631,7 @@
               <ul id="portfolio-flters">
                 <li data-filter="*" class="filter-active">All</li>
                 <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Card</li>
+                <li data-filter=".filter-card">Games</li>
                 <li data-filter=".filter-web">Web</li>
               </ul>
             </div>
@@ -620,11 +650,11 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/gadang.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
+                <h4>SDN Gadang 1</h4>
                 <p>Web</p>
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/gadang.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -650,11 +680,11 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/bareng-1.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 2</h4>
+                <h4>SDN Bareng 1</h4>
                 <p>Web</p>
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/bareng-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Bareng 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -670,11 +700,11 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/games-1.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+                <h4>daddys-adventure:goes to school</h4>
+                <p>Karya Kelompok Kelas RPL</p>
+                <a href="assets/img/portfolio/games-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -690,11 +720,21 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/kiduldalem.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
+                <h4>SDN Kiduldalem 2</h4>
                 <p>Web</p>
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/kiduldalem.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <img src="assets/img/portfolio/sdnbareng3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SDN Bareng 3</h4>
+                <p>Web</p>
+                <a href="assets/img/portfolio/sdnbareng3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
