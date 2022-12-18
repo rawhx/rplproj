@@ -23,7 +23,7 @@
             <i class="bi bi-x-circle" style="color: white; size:"></i>
         </div>
         <header>
-            <a href="">
+            <a href="/">
                 <img src="assets/img/logo.png" alt="smkn4" width="100">
             </a>
         </header>
@@ -67,7 +67,7 @@
                 <span class="iconify" data-icon="ri:menu-2-fill" data-width="30"></span>
             </div>
             <a class="profile">
-                <h6 style="margin: 0 50px">Hi, Admin</h6>
+                <h6 style="margin: 0 50px">Hi, {{auth()->user()->name}}</h6>
             </a>
         </div>
         <div class="dashboard">
@@ -99,10 +99,10 @@
 </html>
 <script>
 document.querySelector(".menu").addEventListener("click", function(){
-document.querySelector("#sidebar").style.display="block"
+document.querySelector("#sidebar").style.visibility='visible';
 })
 document.querySelector(".close").addEventListener("click", function(){
-document.querySelector("#sidebar").style.display="none"
+document.querySelector("#sidebar").style.visibility="hidden"
 })
 document.addEventListener('click', function handleClickOutsideBox(event) {
 const box = document.getElementById('');

@@ -150,7 +150,8 @@ table .judul td{
   }
 
   #sidebar {
-      display: none;
+      /* display: none; */
+      visibility: hidden;
       position: absolute;
   }
 

@@ -359,80 +359,84 @@
       </section><!-- End Faq Section -->
 
       <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
-        <div class="container">
-
-          <div class="section-title">
-            <h2>Kontak</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      <form action="{{ route('update_kontak') }}" method="POST">
+        @method('put')
+        @csrf
+        <section id="contact" class="contact">
+          <div class="container">
+            <div class="section-title">
+              <h2>Kontak <button type="submit">Simpan</button></h2>
+              <p><textarea name="deskripsi" id="" cols="135" rows="5" required>
+                Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+              </textarea></p>
+            </div>
           </div>
-        </div>
 
-        <div>
-          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.0881917023917!2d112.62512201401486!3d-7.989828981893124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6281b75ea5485%3A0x90fd5c6fcedf6acf!2sSMK%20Negeri%204%20Kota%20Malang!5e0!3m2!1sid!2sid!4v1671188339715!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
-        </div>
+          <div>
+            <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.0881917023917!2d112.62512201401486!3d-7.989828981893124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6281b75ea5485%3A0x90fd5c6fcedf6acf!2sSMK%20Negeri%204%20Kota%20Malang!5e0!3m2!1sid!2sid!4v1671188339715!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
+          </div>
 
-        <div class="container">
+          <div class="container">
 
-          <div class="row mt-5">
+            <div class="row mt-5">
 
-            <div class="col-lg-4">
-              <div class="info">
-                <div class="address">
-                  <i class="ri-map-pin-line"></i>
-                  <h4>Lokasi:</h4>
-                  <p>Jl. Tanimbar No.22, Kasin, Kec Klojen, Kota Malang, Jawa Timur, Indonesia</p>
+              <div class="col-lg-4">
+                <div class="info">
+                  <div class="address">
+                    <i class="ri-map-pin-line"></i>
+                    <h4>Lokasi:</h4>
+                    <p>Jl. Tanimbar No.22, Kasin, Kec Klojen, Kota Malang, Jawa Timur, Indonesia</p>
+                  </div>
+
+                  <div class="email">
+                    <i class="ri-mail-line"></i>
+                    <h4>Email:</h4>
+                    <p><input type="emai" name="email" value="{{ $kontak -> email }}" required></p>
+                  </div>
+
+                  <div class="phone">
+                    <i class="ri-phone-line"></i>
+                    <h4>Telepon:</h4>
+                    <p><input type="tel" name="telepon" value="{{ $kontak -> telepon }}" required></p>
+                  </div>
+
                 </div>
 
-                <div class="email">
-                  <i class="ri-mail-line"></i>
-                  <h4>Email:</h4>
-                  <p>info@example.com</p>
-                </div>
+              </div>
 
-                <div class="phone">
-                  <i class="ri-phone-line"></i>
-                  <h4>Telepon:</h4>
-                  <p>+1 5589 55488 55s</p>
-                </div>
+              <div class="col-lg-8 mt-5 mt-lg-0">
+
+                <form @disabled(true) action="{{route('send_massage')}}" method="post" role="form" class="php-email-form">
+                  @csrf
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Masukan Nama" disabled  style="cursor: not-allowed">
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Masukan Email" disabled  style="cursor: not-allowed">
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subjek" id="subject" placeholder="Subjek" disabled  style="cursor: not-allowed">
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea class="form-control" name="pesan" rows="5" placeholder="Pesan" disabled  style="cursor: not-allowed"></textarea>
+                  </div>
+                  <div class="my-3">
+                    {{-- <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Pesan anda berhasil terkirim. Terima kasih!</div> --}}
+                  </div>
+                  <div class="text-center"><button type="submit" disabled  style="cursor: not-allowed">Kirim Pesan</button></div>
+                </form>
 
               </div>
 
             </div>
 
-            <div class="col-lg-8 mt-5 mt-lg-0">
-
-              <form @disabled(true) action="{{route('send_massage')}}" method="post" role="form" class="php-email-form">
-                @csrf
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Masukan Nama" disabled  style="cursor: not-allowed">
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Masukan Email" disabled  style="cursor: not-allowed">
-                  </div>
-                </div>
-                <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subjek" id="subject" placeholder="Subjek" disabled  style="cursor: not-allowed">
-                </div>
-                <div class="form-group mt-3">
-                  <textarea class="form-control" name="pesan" rows="5" placeholder="Pesan" disabled  style="cursor: not-allowed"></textarea>
-                </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Pesan anda berhasil terkirim. Terima kasih!</div>
-                </div>
-                <div class="text-center"><button type="submit" disabled  style="cursor: not-allowed">Kirim Pesan</button></div>
-              </form>
-
-            </div>
-
           </div>
-
-        </div>
-      </section><!-- End Contact Section -->
-
+        </section><!-- End Contact Section -->
+      </form>
     </main><!-- End #main -->
 
   @else
@@ -758,7 +762,7 @@
 
           <div class="section-title">
             <h2>Kontak</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p>{{ $kontak -> deskripsi }}</p>
           </div>
         </div>
 
@@ -781,13 +785,13 @@
                 <div class="email">
                   <i class="ri-mail-line"></i>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p>{{ $kontak -> email }}</p>
                 </div>
 
                 <div class="phone">
                   <i class="ri-phone-line"></i>
                   <h4>Telepon:</h4>
-                  <p>+1 5589 55488 55s</p>
+                  <p>{{ $kontak -> telepon }}</p>
                 </div>
 
               </div>

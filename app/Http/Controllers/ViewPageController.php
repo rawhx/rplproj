@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Kontak;
 
 class ViewPageController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $kontak = Kontak::all()->first();
+        return view('index', [
+            'kontak' => $kontak,
+        ]);
     }
 
     // admin page
