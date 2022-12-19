@@ -18,7 +18,7 @@
   
   <!-- Favicons -->
   <link href="assets/img/backgorund-logo.jpeg" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/backgorund-logo.jpeg" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -202,17 +202,36 @@
             <div class="col-lg-12 d-flex justify-content-center">
               <ul id="portfolio-flters">
                 <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-ui/ux">UI/UX</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Games</li>
-                <li data-filter=".filter-web">Web</li>
+                <li data-filter=".filter-ui">UI/UX</li>
+                <li data-filter=".filter-Mobile">Mobile</li>
+                <li data-filter=".filter-Games">Games</li>
+                <li data-filter=".filter-Web">Web</li>
               </ul>
             </div>
           </div>
 
           <div class="row portfolio-container">
+            @foreach ($porto as $porto)
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="col-lg-4 col-md-6 portfolio-item filter-{{$porto->kategori}}">
+                <img src="{{asset('storage/'.$porto->image)}}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>{{$porto->title}}</h4>
+                  <p>
+                    @if ($porto->kategori == 'ui')
+                        UI/UX
+                    @else
+                      {{$porto->kategori}}
+                    @endif
+                  </p>
+                  <a href="{{asset('storage/'.$porto->image)}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{$porto->title}}"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+                
+            @endforeach
+
+          {{-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 1</h4>
@@ -226,7 +245,7 @@
               <img src="assets/img/portfolio/gadang.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>SDN Gadang 1</h4>
-                <p>Hasil karya P5 programming kelompok 3</p>
+                <p></p>
                 <a href="assets/img/portfolio/gadang.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -296,7 +315,7 @@
               <img src="assets/img/portfolio/kiduldalem.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>SDN Kiduldalem 2</h4>
-                <p>Hasil karya P5 programming kelompok 4</p>
+                <p>Web</p>
                 <a href="assets/img/portfolio/kiduldalem.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Kiduldalem 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -306,7 +325,7 @@
               <img src="assets/img/portfolio/sdnbareng3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>SDN Bareng 3</h4>
-                <p>Hasil karya P5 programming kelompok 3</p>
+                <p>Web</p>
                 <a href="assets/img/portfolio/sdnbareng3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Bareng 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -316,11 +335,11 @@
               <img src="assets/img/portfolio/sukoharjo.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>SDN Sukoharjo 1</h4>
-                <p>Hasil karya P5 programming kelompok 3</p>
+                <p>Web</p>
                 <a href="assets/img/portfolio/sukoharjo.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Sukoharjo 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
-            </div>
+            </div> --}}
 
           </div>
 
@@ -621,15 +640,35 @@
             <div class="col-lg-12 d-flex justify-content-center">
               <ul id="portfolio-flters">
                 <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-ui/ux">UI/UX</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Games</li>
-                <li data-filter=".filter-web">Web</li>
+                <li data-filter=".filter-ui">UI/UX</li>
+                <li data-filter=".filter-Mobile">Mobile</li>
+                <li data-filter=".filter-Games">Games</li>
+                <li data-filter=".filter-Web">Web</li>
               </ul>
             </div>
           </div>
 
           <div class="row portfolio-container">
+            @foreach ($porto as $porto)
+            <div class="col-lg-4 col-md-6 portfolio-item filter-{{$porto->kategori}}">
+              <img src="{{asset('storage/'.$porto->image)}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>{{$porto->title}}</h4>
+                <p>
+                  @if ($porto->kategori == 'ui')
+                      UI/UX
+                  @else
+                    {{$porto->kategori}}
+                  @endif
+                </p>
+                <a href="{{asset('storage/'.$porto->image)}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{$porto->title}}"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+                
+            @endforeach
+
+          {{-- <div class="row portfolio-container">
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
@@ -640,12 +679,21 @@
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-ui">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>A</h4>
+                <p>App</p>
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
               <img src="assets/img/portfolio/gadang.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>SDN Gadang 1</h4>
-                <p>Hasil karya P5 programming kelompok 3</p>
+                <p></p>
                 <a href="assets/img/portfolio/gadang.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -715,7 +763,7 @@
               <img src="assets/img/portfolio/kiduldalem.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>SDN Kiduldalem 2</h4>
-                <p>Hasil karya P5 programming kelompok 4</p>
+                <p>Web</p>
                 <a href="assets/img/portfolio/kiduldalem.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Kiduldalem 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -725,7 +773,7 @@
               <img src="assets/img/portfolio/sdnbareng3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>SDN Bareng 3</h4>
-                <p>Hasil karya P5 programming kelompok 1</p>
+                <p>Web</p>
                 <a href="assets/img/portfolio/sdnbareng3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Bareng 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -736,13 +784,13 @@
               <img src="assets/img/portfolio/sukoharjo.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>SDN Sukoharjo 1</h4>
-                <p>Hasil karya P5 programming kelompok 3</p>
+                <p></p>
                 <a href="assets/img/portfolio/sukoharjo.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Sukoharjo 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
 
-          </div>
+          </div> --}}
 
         </div>
       </section><!-- End Portfolio Section -->
@@ -898,9 +946,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   {{-- <script src="assets/vendor/php-email-form/validate.js"></script> --}}
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-{{-- 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> --}}
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

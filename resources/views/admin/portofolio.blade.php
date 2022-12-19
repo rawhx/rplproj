@@ -28,13 +28,13 @@
             </a>
         </header>
         <ul class="nav">
-            <li class="active">
-                <a href="">
+            <li>
+                <a href="/admin">
                     <i class="bi bi-speedometer2"></i>Dashboard
                 </a>
             </li>
-            <li>
-                <a href="{{route('viewporto')}}">
+            <li class="active">
+                <a href="">
                     <i class="bi bi-book"></i>Portofolio
                 </a>
             </li>
@@ -71,27 +71,21 @@
             </a>
         </div>
         <div class="dashboard">
-            <h2>Dashboard</h2>
-            <div class="content">
-                <table class="table" style="text-align: center;">
-                    <tr class="judul bg-info">
-                        <td class="text-light">No</td>
-                        <td class="text-light">Nama</td>
-                        <td class="text-light">Email</td>
-                        <td class="text-light">Subjek</td>
-                        <td class="text-light">Pesan</td>
-                    </tr>
-
-                    @foreach ($pesan as $pesan)
-                    <tr>
-                        <td>{{ $loop->iteration}}</td>
-                        <td>{{ $pesan->name }}</td>
-                        <td>{{ $pesan->email }}</td>
-                        <td>{{ $pesan->subjek }}</td>
-                        <td>{{ $pesan->pesan }}</td>
-                    </tr>
-                    @endforeach
-               </table>
+            Portofolio
+            <div class="add">
+                Tambahkan Portofolio
+                <form action="{{ route('create_portofolio') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <input type="text" name="title" placeholder="Judul Website">
+                    <select name="kategori">
+                        <option value="ui">UI/UX</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Web">Web</option>
+                        <option value="Games">Games</option>
+                    </select>
+                    <input type="file" name="image" accept="image/png, image/gif, image/jpeg">
+                    <button type="submit">Simpan</button>
+                </form>
             </div>
         </div>
     </div>
@@ -111,3 +105,11 @@ if (!box.contains(event.target)) {
 }
 });
 </script>
+
+<style>
+    .add {
+        margin: 10px;
+        padding: 15px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+</style>
