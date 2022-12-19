@@ -26,8 +26,13 @@ class PesanController extends Controller
         ]);
 
         // masih bug load
-        Pesan::create($pesan);
-        return back();
+        if (Pesan::create($pesan)) {
+            session()->flash('berhasil', 'Pesan anda berhasil terkirim. Terima kasih!');
+        } else {
+            session()->flash('gagal', 'Pesan anda gagal terkirim!');
+        }
+        
+        return redirect('/#contact');
     }
 
 

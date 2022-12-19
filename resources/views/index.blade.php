@@ -274,8 +274,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <img src="assets/img/portfolio/games-1.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>daddys-adventure:goes to school</h4>
-                <p>Karya Kelompok Kelas RPL</p>
+                <h4>daddys-adventure</h4>
+                <p>Karya Kelompok Kelas RPL A</p>
                 <a href="assets/img/portfolio/games-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -315,16 +315,6 @@
               <img src="assets/img/portfolio/sukoharjo.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>SDN Sukoharjo 1</h4>
-                <p>Web</p>
-                <a href="assets/img/portfolio/sukoharjo.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/sukoharjo.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>SDN sukoharjo 1</h4>
                 <p>Web</p>
                 <a href="assets/img/portfolio/sukoharjo.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
@@ -396,7 +386,7 @@
           <div class="container">
             <div class="section-title">
               <h2>Kontak <button type="submit">Simpan</button></h2>
-              <p><textarea name="deskripsi" id="" cols="135" rows="5" required>
+              <p><textarea name="deskripsi" id="" cols="135" rows="5">
                 Dapat menghubungi kami pada lokasi berikut.
               </textarea></p>
             </div>
@@ -702,8 +692,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <img src="assets/img/portfolio/games-1.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>daddys-adventure:goes to school</h4>
-                <p>Karya Kelompok Kelas RPL</p>
+                <h4>daddys-adventure</h4>
+                <p>Karya Kelompok Kelas RPL A</p>
                 <a href="assets/img/portfolio/games-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -735,6 +725,17 @@
                 <h4>SDN Bareng 3</h4>
                 <p>Web</p>
                 <a href="assets/img/portfolio/sdnbareng3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <img src="assets/img/portfolio/sukoharjo.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SDN Sukoharjo 1</h4>
+                <p>Web</p>
+                <a href="assets/img/portfolio/sukoharjo.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -861,6 +862,12 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Pesan anda berhasil terkirim. Terima kasih!</div>
                 </div>
+                @if (session()->has('berhasil'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                  {{session()->get('berhasil')}}
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
                 <div class="text-center"><button type="submit">Kirim Pesan</button></div>
               </form>
 
@@ -887,8 +894,11 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  {{-- <script src="assets/vendor/php-email-form/validate.js"></script> --}}
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
@@ -896,3 +906,9 @@
 </body>
 
 </html>
+
+<style>
+  .details-link {
+    display: none
+  }
+</style>

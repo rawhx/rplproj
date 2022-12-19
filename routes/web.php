@@ -18,20 +18,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 // login
-Route::get('/login', [LoginController::class, 'view'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 
 
-// view
 Route::get('/', [ViewPageController::class, 'index'])->name('index');
+Route::get('/detail', [ViewPageController::class, 'detail'])->name('detail');
+Route::get('/portofolio', [ViewPageController::class, 'edit_porto']);
 
 Route::group(['middleware' => 'auth'], function(){
     Route::get('/admin/logout', [LoginController::class, 'logout'])->name('logout');
     Route::get('/admin', [PesanController::class, 'view'])->name('pesan');
-    Route::put('/kontak', [UpdatePageController::class, 'update_kontak'])->name('update_kontak');
+    Route::put('/kontak/{id}', [UpdatePageController::class, 'update_kontak'])->name('update_kontak');
 });
 
 Route::group(['middleware' => 'guest'], function(){
+    Route::get('/login', [LoginController::class, 'view'])->name('login');
     Route::post('/', [PesanController::class, 'create_pesan'])->name('send_massage');
 });
 
