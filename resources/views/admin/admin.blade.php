@@ -35,12 +35,12 @@
             </li>
             <li>
                 <a href="">
-                    <i class="bi bi-people"></i>Admin
+                    <i class="bi bi-book"></i>Portofolio
                 </a>
             </li>
             <li>
                 <a href="">
-                    <i class="bi bi-trophy"></i>Prestasi
+                    <i class="bi bi-people"></i>Admin
                 </a>
             </li>
             <li>

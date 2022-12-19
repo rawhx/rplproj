@@ -28,7 +28,7 @@ Route::get('/portofolio', [ViewPageController::class, 'edit_porto']);
 Route::group(['middleware' => 'auth'], function(){
     Route::get('/admin/logout', [LoginController::class, 'logout'])->name('logout');
     Route::get('/admin', [PesanController::class, 'view'])->name('pesan');
-    Route::put('/kontak/{id}', [UpdatePageController::class, 'update_kontak'])->name('update_kontak');
+    Route::put('/kontak', [UpdatePageController::class, 'update_kontak'])->name('update_kontak');
 });
 
 Route::group(['middleware' => 'guest'], function(){
