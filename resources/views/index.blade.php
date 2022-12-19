@@ -276,7 +276,7 @@
               <div class="portfolio-info">
                 <h4>daddys-adventure</h4>
                 <p>Karya Kelompok Kelas RPL A</p>
-                <a href="assets/img/portfolio/games-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/games-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="daddys-adventure"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -296,7 +296,7 @@
               <div class="portfolio-info">
                 <h4>SDN Kiduldalem 2</h4>
                 <p>Web</p>
-                <a href="assets/img/portfolio/kiduldalem.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/kiduldalem.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Kiduldalem 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -306,7 +306,7 @@
               <div class="portfolio-info">
                 <h4>SDN Bareng 3</h4>
                 <p>Web</p>
-                <a href="assets/img/portfolio/sdnbareng3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/sdnbareng3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Bareng 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -315,8 +315,8 @@
               <img src="assets/img/portfolio/sukoharjo.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>SDN Sukoharjo 1</h4>
-                <p>Web</p>
-                <a href="assets/img/portfolio/sukoharjo.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
+                <p>Hasil karya P5 programming kelompok 3</p>
+                <a href="assets/img/portfolio/sukoharjo.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Sukoharjo 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -694,7 +694,7 @@
               <div class="portfolio-info">
                 <h4>daddys-adventure</h4>
                 <p>Karya Kelompok Kelas RPL A</p>
-                <a href="assets/img/portfolio/games-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/games-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="daddys-adventure"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -714,7 +714,7 @@
               <div class="portfolio-info">
                 <h4>SDN Kiduldalem 2</h4>
                 <p>Web</p>
-                <a href="assets/img/portfolio/kiduldalem.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/kiduldalem.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Kiduldalem 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -724,7 +724,7 @@
               <div class="portfolio-info">
                 <h4>SDN Bareng 3</h4>
                 <p>Web</p>
-                <a href="assets/img/portfolio/sdnbareng3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/sdnbareng3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Bareng 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -734,8 +734,8 @@
               <img src="assets/img/portfolio/sukoharjo.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>SDN Sukoharjo 1</h4>
-                <p>Web</p>
-                <a href="assets/img/portfolio/sukoharjo.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Gadang 1"><i class="bx bx-plus"></i></a>
+                <p>Hasil karya P5 programming kelompok 3</p>
+                <a href="assets/img/portfolio/sukoharjo.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SDN Sukoharjo 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
